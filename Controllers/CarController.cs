@@ -28,10 +28,13 @@ public class CarController : Controller
     [HttpPost]
     public IActionResult CreateCar(CarsEntity car)
     {
-        _db.Cars.Add(car);
-        _db.SaveChanges();
-
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            _db.Cars.Add(car);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View(car);
     }
 
     // shows edit form-- GET Request
