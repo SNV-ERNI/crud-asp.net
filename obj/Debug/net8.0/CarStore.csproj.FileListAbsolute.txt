@@ -135,3 +135,4 @@ C:\Users\Boot Camp\DOTNET\CarStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\Syst
 C:\Users\Boot Camp\DOTNET\CarStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Boot Camp\DOTNET\CarStore\obj\Debug\net8.0\CarStore.csproj.AssemblyReference.cache
 C:\Users\Boot Camp\DOTNET\CarStore\obj\Debug\net8.0\CarStore.csproj.Up2Date
+C:\Users\Boot Camp\DOTNET\CarStore\obj\Debug\net8.0\CarStore.sourcelink.json

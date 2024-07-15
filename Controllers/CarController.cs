@@ -68,7 +68,6 @@ public class CarController : Controller
         return View(car);
     }
 
-    [HttpPost, ActionName("Delete")]
     public IActionResult DeleteConfirmed(int id)
     {
         var car = _db.Cars.Find(id);
