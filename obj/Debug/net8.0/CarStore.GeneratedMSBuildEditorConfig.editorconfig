@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Boot Camp/DOTNET/CarStore/Views/Car/_CreateCarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXF9DcmVhdGVDYXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Boot Camp/DOTNET/CarStore/Views/Car/_EditCarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXF9FZGl0Q2FyTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Boot Camp/DOTNET/CarStore/Views/Car/_ViewCarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXF9WaWV3Q2FyTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Boot Camp/DOTNET/CarStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

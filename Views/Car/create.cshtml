@@ -6,9 +6,9 @@
 
 <h2>Add a car</h2>
 
-<form id="createCarForm" asp-action="CreateCar" asp-controller="Car" method="POST">
-    <div class="row">
-        <div class="col-lg-12">
+<form id="createCarForm" asp-action="CreateCar" asp-controller="Car" method="POST" class="container form-inline">
+    <div class="row bg-light bg-gradient">
+        <div class="col-lg-6 mb-3">
             <div class="form-group">
                 <label>Car Brand</label>
                 <input asp-for="Brand" type="text" class="form-control" required>
@@ -19,6 +19,8 @@
                 <input asp-for="Model" type="text" class="form-control" required>
                 <span asp-validation-for="Model" class="text-danger" id="modelError" style="display:none;"></span>
             </div>
+        </div>
+        <div class="col-lg-6 mb-3">
             <div class="form-group">
                 <label>Year Version</label>
                 <input asp-for="Version" type="text" class="form-control" minlength="4" maxlength="4" required>
@@ -29,6 +31,8 @@
                 <input asp-for="PlateNum" type="text" class="form-control" maxlength="8" required>
                 <span asp-validation-for="PlateNum" class="text-danger" id="plateNumError" style="display:none;"></span>
             </div>
+        </div>
+        <div class="col-lg-6 mb-3">
             <div class="form-group">
                 <label>Car Type</label>
                 <select asp-for="CarType" class="form-control" required>
@@ -42,11 +46,9 @@
                 <span asp-validation-for="CarType" class="text-danger" id="carTypeError" style="display:none;"></span>
             </div>
 
-            <div class="card-footer">
-                <center>
-                    <button type="submit" class="btn btn-primary">Create</button>
-                    <a asp-action="Index" asp-controller="Car" class="btn btn-secondary">Close</a>
-                </center>
+            <div class="mt-4">
+                <button type="submit" class="btn btn-success">Create</button>
+                <a asp-action="Index" asp-controller="Car" class="btn btn-secondary">Close</a>            
             </div>
         </div>
     </div>

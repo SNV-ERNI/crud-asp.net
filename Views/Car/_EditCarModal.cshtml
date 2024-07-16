@@ -1,0 +1,54 @@
+@model CarsEntity
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Car Details</h5>
+                <button type="button" class="close close-edit-button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm" method="POST" asp-action="EditCar" asp-controller="Car">
+                    <div class="form-group">
+                        <input asp-for="Id" type="hidden" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Car Brand</label>
+                        <input asp-for="Brand" type="text" class="form-control" required>
+                        <span asp-validation-for="Brand" class="text-danger" id="editbrandError" style="display:none;"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Car Model</label>
+                        <input asp-for="Model" type="text" class="form-control" required>
+                        <span asp-validation-for="Model" class="text-danger" id="editmodelError" style="display:none;"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Year Version</label>
+                        <input asp-for="Version" type="text" class="form-control" minlength="4" maxlength="4" required>
+                        <span asp-validation-for="Version" class="text-danger" id="editversionError" style="display:none;"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Plate Number</label>
+                        <input asp-for="PlateNum" type="text" class="form-control" maxlength="8" required>
+                        <span asp-validation-for="PlateNum" class="text-danger" id="editplateNumError" style="display:none;"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Car Type</label>
+                        <select asp-for="CarType" class="form-control" required>
+                            <option value="">-- Select --</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Compact">Compact</option>
+                            <option value="Truck">Truck</option>
+                            <option value="Sports">Sports</option>
+                        </select>
+                        <span asp-validation-for="CarType" class="text-danger" id="editcarTypeError" style="display:none;"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Save changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

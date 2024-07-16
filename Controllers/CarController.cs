@@ -37,16 +37,19 @@ public class CarController : Controller
         return View(car);
     }
 
-    // shows edit form-- GET Request
-    public IActionResult Edit(int id)
+    public IActionResult ViewCarModal(int id)
     {
-        var existingCar = _db.Cars.Find(id);
-        if (existingCar == null)
-        {
-            return NotFound();
-        }
-        return View(existingCar);
+        var car = _db.Cars.Find(id);
+        return PartialView("_ViewCarModal", car);
     }
+
+    public IActionResult EditCarModal(int id)
+    {
+        var car = _db.Cars.Find(id);
+        return PartialView("_EditCarModal", car);
+    }
+
+    // shows edit form-- GET Request
 
     [HttpPost]
     public IActionResult EditCar(CarsEntity car)

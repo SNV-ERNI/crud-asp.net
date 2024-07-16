@@ -1,0 +1,24 @@
+@model CarsEntity
+
+<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewModalLabel">View Car Details</h5>
+                <button type="button" class="close close-view-button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Brand:</strong> @Model.Brand</p>
+                <p><strong>Model:</strong> @Model.Model</p>
+                <p><strong>Version:</strong> @Model.Version</p>
+                <p><strong>Plate Number:</strong> @Model.PlateNum</p>
+                <p><strong>Car Type:</strong> @Model.CarType</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-view-button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
