@@ -10,11 +10,26 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p><strong>Brand:</strong> @Model.Brand</p>
-                <p><strong>Model:</strong> @Model.Model</p>
-                <p><strong>Version:</strong> @Model.Version</p>
-                <p><strong>Plate Number:</strong> @Model.PlateNum</p>
-                <p><strong>Car Type:</strong> @Model.CarType</p>
+                <div class="container">
+                    <!-- Single Column for the Image -->
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img src="/Img/TX550.jpeg" class="img-fluid" alt="Car Image">
+                        </div>
+                    </div>
+                    <!-- Two Columns for the Text Details -->
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <p><strong>Brand:</strong> @Model.Brand</p>
+                            <p><strong>Model:</strong> @Model.Model</p>
+                            <p><strong>Version:</strong> @Model.Version</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Plate Number:</strong> @Model.PlateNum</p>
+                            <p><strong>Car Type:</strong> @Model.CarType</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary close-view-button" data-dismiss="modal">Close</button>

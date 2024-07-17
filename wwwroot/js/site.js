@@ -56,6 +56,22 @@ $(document).on('click', '.close-button', function (event) {
     modal.modal('hide');
 });
 
+// Image Upload Script
+document.getElementById('createCarForm').addEventListener('submit', function (event) {
+    var imageInput = document.getElementById('image');
+    var file = imageInput.files[0];
+
+    if (file) {
+        var reader = new FileReader();
+        reader.onloadend = function () {
+            var base64String = reader.result.split(',')[1];
+            document.getElementById('imageBase64').value = base64String;
+            document.getElementById('createCarForm').submit();
+        };
+        reader.readAsDataURL(file);
+        event.preventDefault(); // Prevent the form from submitting until the image is converted
+    }
+});
 
 // Input Validation for Create Page
 document.addEventListener('DOMContentLoaded', function () {
